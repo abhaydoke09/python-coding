@@ -1,8 +1,8 @@
 
-def reverseString(s,i):
-	if i == len(s)-1:
-		return s[i]
+def reverseString(s):
+	if len(s) == 1:
+		return s
 	else:
-		return reverseString(s,i+1) + s[i]
+		return reverseString(s[1:]) + s[0]
 
-print reverseString('abhay doke',0)
+print reverseString('abhay doke')
